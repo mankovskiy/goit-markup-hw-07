@@ -1,0 +1,85 @@
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: calc(-1 * var(--portfolio-list-gap));
+  margin-left: calc(-1 * var(--portfolio-list-gap));
+}
+
+.portfolio-list .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: var(--portfolio-list-gap);
+  margin-left: var(--portfolio-list-gap);
+}
+
+.portfolio-list .title {
+  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-list .text {
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+.portfolio-subtitle {
+  border: 1px solid var(--card-border-color);
+  border-top: 0;
+  padding: 20px 24px;
+}
+.portfolio-subtitle .title {
+  margin: 0;
+}
+.portfolio-subtitle .text {
+  color: var(--primary-text-color);
+  margin-top: 4px;
+}
+
+.portfolio-card {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-card:hover,
+.portfolio-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-card:hover .portfolio-card-thumb-text,
+.portfolio-card:focus .portfolio-card-thumb-text {
+  transform: translateY(0);
+}
+
+.portfolio-card-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card-thumb-text {
+  margin: 0;
+  padding: 63px 24px;
+  position: absolute;
+  transform: translateY(101%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  top: 0;
+  left: 0;
+
+  height: 100%;
+
+  overflow: auto;
+
+  color: var(--primary-white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+}
