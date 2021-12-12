@@ -6,7 +6,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   margin-bottom: 20px;
 }
 
@@ -18,22 +18,21 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding: 15px 16px;
-  color: var(--primary-white-color);
-}
+  color: $primary-white-color;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
 
-.input-footer::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
+    letter-spacing: 0.03em;
 
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .button-footer {
   position: relative;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  color: $primary-white-color;
+  background-color: $accent-color;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
