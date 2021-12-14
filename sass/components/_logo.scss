@@ -1,11 +1,15 @@
 .logo {
-  color: $logo-second-part;
+  color: $accent-color;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  &__name {
-    color: $accent-color;
-  }
+}
+.logo__second-part--colo-black {
+  color: $logo-second-part;
+}
+
+.logo__second-part--colo-white {
+  color: $primary-white-color;
 }

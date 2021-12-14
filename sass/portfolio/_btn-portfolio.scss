@@ -3,16 +3,16 @@
   padding-bottom: 94px;
 }
 
-.galary-btn {
+.portfolio-button {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
-  .item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 8px;
   }
 }
 
-.button-link {
+.portfolio-button__btn {
   display: block;
   padding: 6px 22px;
   min-width: 100%;
