@@ -6,12 +6,10 @@
   }
 }
 .feature__wrap-icon {
-  display: flex;
+  @extend %centered;
   height: 120px;
-  background-color: $primary-button-color;
+  background-color: getColor('primary-button-color');
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
 }
 

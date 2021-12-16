@@ -1,15 +1,11 @@
 .section-subtitle {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @extend %section-subtitle-font;
 }
 
 .section-subtitle--color-white {
-  color: $primary-white-color;
+  color: getColor('primary-white-color');
 }
 
 .section-subtitle--color-black {
-  color: $title-text-color;
+  color: getColor('title-text-color');
 }

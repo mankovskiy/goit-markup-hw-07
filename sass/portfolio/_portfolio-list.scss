@@ -2,12 +2,12 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin-top: calc(-1 * #{$portfolio-list-gap});
-  margin-left: calc(-1 * #{$portfolio-list-gap});
+  margin-top: calc(-1 * 30px);
+  margin-left: calc(-1 * 30px);
   &__item {
     flex-basis: calc(100% / 3 - 30px);
-    margin-top: $portfolio-list-gap;
-    margin-left: $portfolio-list-gap;
+    margin-top: 30px;
+    margin-left: 30px;
   }
   &__link {
     display: block;
@@ -46,7 +46,7 @@
   left: 0;
   height: 100%;
   overflow: auto;
-  color: $primary-white-color;
+  color: getColor('primary-white-color');
   background-color: rgba(33, 150, 243, 0.9);
   font-weight: 400;
   font-size: 18px;
@@ -56,13 +56,13 @@
 
 .portfolio-list {
   &__wrap-title {
-    border: 1px solid $card-border-color;
+    border: 1px solid getColor('card-border-color');
     border-top: 0;
     padding: 20px 24px;
   }
   &__title {
     margin: 0;
-    color: $title-text-color;
+    color: getColor('title-text-color');
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -70,7 +70,7 @@
     letter-spacing: 0.06em;
   }
   &__subtitle {
-    color: $primary-text-color;
+    color: getColor('primary-text-color');
     margin-top: 4px;
   }
 }

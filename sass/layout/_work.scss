@@ -24,9 +24,7 @@
 
 .section-work-list__overlay-work {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %centered;
   bottom: 0;
   height: 70px;
   width: 100%;
